@@ -21,7 +21,7 @@
                   </div>
                   <div class="col-lg-6">
                     <?php if (loggedIn()) {
-                      if (true){
+                      if (hasCard){
                         ?>
                         <p class="text-right">Owned</p>
                         <?php
@@ -32,7 +32,7 @@
                       }
                     }
                     ?>
-
+                    
                     <div class="modal fade" id="Purchase" role="dialog">
                       <div class="modal-dialog">
                         <div class="modal-content">
@@ -41,7 +41,7 @@
                             <h4 class="modal-title">Hero Name</h4>
                           </div>
                           <div class="modal-body">
-                            <p>Purchase</p>
+                            <p>Purchsae </p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
