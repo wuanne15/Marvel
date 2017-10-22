@@ -28,7 +28,7 @@
   		$name = $_SESSION["name"];
   		#$filename = "todo_" . $name . ".txt";
   	}
-  		
+
     ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -61,18 +61,6 @@
                     <li class="active"><a href="characterpage.php">All Stocks<span class="sr-only">(current)</span></a></li>
                     <li><a href="characterpage.php">Character List</a></li>
                     <li><a href="about.php">About</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="mycollection.php">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li>
                   </ul>
                   <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
@@ -84,13 +72,14 @@
                     <?php
                     if (loggedIn()) {
                         ?>
+                        <ul class="nav navbar-nav">
+                          <li><a href="#">10000¢</a></li>
+                        </ul>
                         <div class="btn-group">
                           <a id= "WTF" href="#" class="btn btn-default"><?=$name?></a>
                           <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
                           <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="mycollection.php">My Collection</a></li>
                             <li class="divider"></li>
                             <li><a href="signout.php">Logout</a></li>
                           </ul>
