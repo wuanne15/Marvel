@@ -6,7 +6,7 @@ handlers:
   static_files: www/webpage.html
   upload: www/webpage.html
   
-- url: /(.+\.(gif|png|jpg))$
+- url: /.*(gif|png|jpg)
   static_files: \1
   upload: .+\.(gif|png|jpg)$
   application_readable: true
