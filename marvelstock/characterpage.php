@@ -24,31 +24,27 @@
                       if (true){
                         ?>
                         <p class="text-right">Owned</p>
-                        <?php
-                      } else {
-                        ?>
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#purchase">Purchase</button>
+                        <div class="modal fade" id="Purchase" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">Purchase</button>
+                                <h4 class="modal-title">Hero Name</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Purchase</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <?php
                       }
                     }
                     ?>
-
-                    <div class="modal fade" id="Purchase" role="dialog">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">Purchase</button>
-                            <h4 class="modal-title">Hero Name</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Purchase</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <p class="text-right">Owned/Unowned</p>
                   </div>
                 </div>
