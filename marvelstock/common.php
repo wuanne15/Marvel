@@ -110,12 +110,7 @@
   }
 
   function connect() {
-  	$dbhost = "localhost";
-  	$dbuser = "hello";
-  	$dbpass = "password";
-  	$db = "Marvel";
-  	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n" . $conn -> error);
-  	
+  	$conn = mysqli_connect('localhost', 'hello' , 'password', 'Marvel');
   	return $conn;
   }
 ?>
