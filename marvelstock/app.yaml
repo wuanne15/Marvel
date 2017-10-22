@@ -2,7 +2,7 @@ runtime: php55
 api_version: 1
 
 handlers:
-- url: /index\.html
+- url: /
   static_files: /www/webpage.html
   upload: /www/webpage.html
   
