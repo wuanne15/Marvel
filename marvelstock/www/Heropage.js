@@ -29,6 +29,6 @@
 	
 	function loadValue() {
 		var res = this.responseXML;
-		document.getElementbyID
+		document.getElementbyID();
 	}
 })

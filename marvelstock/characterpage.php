@@ -61,7 +61,7 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="panel panel-default">
-                <div class="panel-heading text-center">
+                <div id="heroname" class="panel-heading text-center">
                   InsertName
                 </div>
                 <div class="panel-body text-center">
