@@ -35,7 +35,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="close" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Purchase</button>
+                                <li><a href="characterpage.php" class="btn btn-default">Purchase</a></li>
                               </div>
                             </div>
                           </div>
