@@ -40,13 +40,6 @@
         # Populate the todolist, while escaping HTML special characters to prevent injection
         # attacks.
         $user_todolist = file($filename, FILE_IGNORE_NEW_LINES);
-        for ($i=0; $i < count($user_todolist); $i++) {
-          ?>
-          <li>
-            <?= htmlspecialchars($user_todolist[$i]) ?>
-          </li>
-          <?php
-        }
       ?>
     </ul>
     <p>Credits:
@@ -56,10 +49,19 @@
     <?php     ?>
     </p>
     <p>Characters owned:
-    <?php     ?>
+    <?= count($user_todolist) - 1 ?>
     </p>
     <p>Total Cards:
-    <?php     ?>
+    <?php
+    $cardCount = 0;
+    for ($i=0; $i < count($user_todolist); $i++) {
+        $cardData = explode(" ", htmlspecialchars($user_todolist[$i]));
+        $cardCount = $cardCount + $cardData[0];
+    }
+    ?>
+    <?= $cardCount ?>
+    <?php
+    ?>
     </p>
     <p>First Login:
     <?php     ?>
@@ -73,13 +75,26 @@
 <table id="ranking" class="table table-striped table-hover ">
   <thead>
     <tr>
-      <th>#</th>
+      <th>Change</th>
       <th>Character</th>
       <th>Quantity</th>
       <th>Value</th>
     </tr>
   </thead>
   <tbody>
+    <?php
+    for ($i=0; $i < count($user_todolist); $i++) {
+      $cardData = explode(" ", htmlspecialchars($user_todolist[$i]));
+      ?>
+      <tr>
+        <td>???</td>
+        <td><?= $cardData[1] ?></td>
+        <td><?= $cardData[0] ?></td>
+        <td>???</td>
+      </tr>
+      <?php
+    }
+    ?>
     <tr>
       <td>aef</td>
       <td>Column content</td>
