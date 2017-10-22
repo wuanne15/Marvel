@@ -33,10 +33,8 @@
                     <button id="char-graph" type="submit" class="btn btn-default">Submit</button>
                   </form>
                 </div>
-                <div id="chart" class="panel-body">
-                  Insert Stock Chart Here
-                </div>
               </div>
+              <div id="chart" style=height: 500px></div>
             </div>
             <div class="col-lg-4">
               <h2>Character Info</h2>
