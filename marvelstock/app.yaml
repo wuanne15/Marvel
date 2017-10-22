@@ -8,5 +8,3 @@ handlers:
   
 - url: /www/.*(gif|png|jpg)
   static_dir: www
-  upload: www/.*\.(gif|png|jpg)
-  application_readable: true
