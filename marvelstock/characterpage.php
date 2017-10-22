@@ -21,7 +21,28 @@
                   </div>
                   <div class="col-lg-6">
                     <?php if (loggedIn()) {
-                      if (true){
+                    if (true/*have card*/){
+                        ?>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#purchase">Purchase</button>
+                        <div class="modal fade" id="purchase" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">Close</button>
+                                <h4 class="modal-title">Hero Name</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Purchase</p>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="characterpage.php" class="btn btn-default">Purchase</a>
+                                <a href="characterpage.php" class="btn btn-default">Sell</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <?php
+                      } else {
                         ?>
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#purchase">Purchase</button>
                         <div class="modal fade" id="purchase" role="dialog">
