@@ -5,7 +5,7 @@
 <div class="row">
   <div class="col-lg-3"></div>
   <div class ="col-lg-6">
-  <form class="form-horizontal" id="loginform" action="login.php" method="post">
+  <form class="form-horizontal" id="loginform" action="signin.php" method="post">
     <fieldset>
       <legend>Log In</legend>
       <?php
