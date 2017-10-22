@@ -1,9 +1,8 @@
-runtime: python27
+runtime: php55
 api_version: 1
-threadsafe: true
 
 handlers:
-- url: /
+- url: /index\.html
   static_files: www/webpage.html
   upload: www/webpage.html
 
