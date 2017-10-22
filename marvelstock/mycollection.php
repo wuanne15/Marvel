@@ -67,16 +67,12 @@
       <td>Column content</td>
       <td>Column content</td>
     </tr>
-  </tbody>
-  <tbody>
     <tr>
       <td>ef</td>
       <td>Column content</td>
       <td>Column content</td>
       <td>Column content</td>
     </tr>
-  </tbody>
-  <tbody>
     <tr>
       <td>ef</td>
       <td>Column content</td>
