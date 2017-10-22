@@ -30,6 +30,30 @@
   </div>
   <div class="col-lg-3">
     <h2 class="text-center">Profile:</h2>
+    <ul id="list">
+      <?php
+        # If the user doesn't have a todolist file, create one.
+        if (!file_exists($filename)) {
+          $file = fopen($filename, 'w');
+          fclose($file);
+        }
+        # Populate the todolist, while escaping HTML special characters to prevent injection
+        # attacks.
+        $user_todolist = file($filename, FILE_IGNORE_NEW_LINES);
+        for ($i=0; $i < count($user_todolist); $i++) {
+          ?>
+          <li>
+            <form action="submit.php" method="post">
+              <input type="hidden" name="action" value="delete" />
+              <input type="hidden" name="index" value="<?= $i ?>" />
+              <input type="submit" value="Delete" />
+            </form>
+            <?= htmlspecialchars($user_todolist[$i]) ?>
+          </li>
+          <?php
+        }
+      ?>
+    </ul>
     <p>Credits:
     <?php     ?>
     </p>

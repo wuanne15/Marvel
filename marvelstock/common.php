@@ -3,10 +3,10 @@
 
   # This will set the user's name and their corresponding todolist file.
   $name = "BLAH";
-  #$filename = "";
+  $filename = "";
   if (isset($_SESSION["name"])) {
     $name = $_SESSION["name"];
-    #$filename = "todo_" . $name . ".txt";
+    $filename = "cards_" . $name . ".txt";
   }
 
   # This function will check if the user is currently logged in.
@@ -23,10 +23,10 @@
   function printTop() {
   	# This will set the user's name and their corresponding todolist file.
   	$name = "";
-  	#$filename = "";
+  	$filename = "";
   	if (isset($_SESSION["name"])) {
   		$name = $_SESSION["name"];
-  		#$filename = "todo_" . $name . ".txt";
+  		$filename = "cards_" . $name . ".txt";
   	}
 
     ?>
