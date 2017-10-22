@@ -8,3 +8,4 @@ handlers:
   
 - url: /www/.*(gif|png|jpg)
   static_files: www/stockmarvel-logo.png
+  upload: www/stockmarvel-logo.png
