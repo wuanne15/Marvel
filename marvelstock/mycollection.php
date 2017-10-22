@@ -6,23 +6,23 @@
 <div class="row"></div>
   <div class="col-lg-3">
     <h3>Most Valuable</h3>
-    <?php *Calls image*    ?>
+     *Calls image*
     <li>
-      <?php *Net Loss, *Stock Count* ?>
+      *Net Loss, *Stock Count*
     </li>
   </div>
   <div class="col-lg-3">
     <h3>Most Owned</h3>
-    <?php *Calls image*    ?>
+    *Calls image*
     <li>
-      <?php *Net Loss, *Stock Count* ?>
+       *Net Loss, *Stock Count*
     </li>
   </div>
   <div class="col-lg-3">
     <h3>Worst Investment</h3>
-    <?php *Calls image*    ?>
+     *Calls image*
     <li>
-      <?php *Net Loss, *Stock Count* ?>
+       *Net Loss, *Stock Count*
     </li>
   </div>
   <div class="col-lg-3">
