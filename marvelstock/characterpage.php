@@ -2,6 +2,7 @@
   include("common.php");
   printTop();
 ?>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script src="characterpage.js"></script>
         <div class="container-fluid">
           <h2>Character Information</h2>
