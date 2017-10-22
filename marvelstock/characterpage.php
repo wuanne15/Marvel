@@ -36,9 +36,6 @@
               </div>
               <div id="chart" style=height: 500px></div>
             </div>
-            <div id="chart">
-              Insert Stock Chart Here
-            </div>
             <div class="col-lg-4">
               <h2>Character Info</h2>
               <p>All Time High: </p>
