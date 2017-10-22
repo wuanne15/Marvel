@@ -28,14 +28,14 @@
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">Close</button>
                                 <h4 class="modal-title">Hero Name</h4>
                               </div>
                               <div class="modal-body">
                                 <p>Purchase</p>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="close" data-dismiss="modal">Close</button>
-                                <li><a href="characterpage.php" class="btn btn-default">Purchase</a></li>
+                                <a href="characterpage.php" class="btn btn-default">Purchase</a>
                               </div>
                             </div>
                           </div>
