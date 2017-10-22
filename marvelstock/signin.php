@@ -48,7 +48,7 @@
 
   # This function logs the user in, remembering the last time someone logged in for 7 days
   function login($name) {
-    $_SESSION["name"] = $name;
+  	$_SESSION["name"] = $name;
     setcookie("last_login", date("D y M d, g:i:s a"), time() + 60 * 60 * 24 * 7);
     redirect("index.php");
   }

@@ -1,6 +1,6 @@
 <?php
   include("common.php");
-  printTop()
+  printTop();
 ?>
       <h1>Welcome to Stock Marvel</h1>
       <p>This is some text.</p>

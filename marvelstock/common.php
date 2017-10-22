@@ -2,7 +2,7 @@
   session_start();
 
   # This will set the user's name and their corresponding todolist file.
-  $name = "";
+  $name = "BLAH";
   #$filename = "";
   if (isset($_SESSION["name"])) {
     $name = $_SESSION["name"];
@@ -20,8 +20,14 @@
     die();
   }
 
-  # This function will print the top portion of the Remember the Cow site.
   function printTop() {
+  	# This will set the user's name and their corresponding todolist file.
+  	$name = "";
+  	#$filename = "";
+  	if (isset($_SESSION["name"])) {
+  		$name = $_SESSION["name"];
+  		#$filename = "todo_" . $name . ".txt";
+  		
     ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -75,21 +81,21 @@
                   </form>
                   <ul class="nav navbar-nav navbar-right">
                     <?php
-                    if (loggedIn()) {
+                    if (isset($_SESSION["name"])) {
                         ?>
                         <div class="btn-group">
-                          <a href="#" class="btn btn-default"><?=$name ?></a>
+                          <a id= "WTF" href="#" class="btn btn-default"><?=$_SESSION["name"]. "NO" ?></a>
                           <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li><a href="signout.php">Logout</a></li>
                           </ul>
                         </div>
                         <?php
-                    } else {
+                   } else {
                     ?>
                     <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                     <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
