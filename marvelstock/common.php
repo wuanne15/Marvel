@@ -78,7 +78,7 @@
                     if (loggedIn()) {
                         ?>
                         <div class="btn-group">
-                          <a href="#" class="btn btn-default"><? $name ?></a>
+                          <a href="#" class="btn btn-default"><?=$name ?></a>
                           <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
@@ -114,7 +114,7 @@
   }
   
   function connect() {
-  	$db= new PDO();
+  	$db = new PDO();
   	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   	return $db;
   }
