@@ -26,8 +26,8 @@
             </div>
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="heroPage.php">All Stocks<span class="sr-only">(current)</span></a></li>
-                  <li><a href="heroPage.php">Character List</a></li>
+                  <li class="active"><a href="characterpage.php">All Stocks<span class="sr-only">(current)</span></a></li>
+                  <li><a href="characterpage.php">Character List</a></li>
                   <li><a href="about.html">About</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -49,7 +49,6 @@
                   <button type="submit" class="btn btn-default">Submit</button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                  <!--<li><a href="#">Log in or Sign up</a></li>-->
                   <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
@@ -57,7 +56,48 @@
           </div>
         </nav>
         <div class="navpad"><img src="stockmarvel-logo.png" alt="Marvel Banner" height="200" class="center-block"></div>
-        <h1>Hero Information</h1>
-    </div>
-  </body>
+        <div class="container-fluid">
+          <h2>Character Information</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                  InsertName
+                </div>
+                <div class="panel-body text-center">
+                  Card Image
+                </div>
+                <div class="row panel-body">
+                  <div class="col-lg-6">
+                    CardValue
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="text-right">Owned/Unowned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <form class="navbar-form navbar-center" role="search">
+                    <input type="text" class="form-control" placeholder="Character Name">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                </div>
+                <div class="panel-body">
+                  Insert Stock Chart Here
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h2>Character Info</h2>
+              <p>All Time High: </p>
+              <p>Net Change Last Month: </p>
+              <p>Other stats and things</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
 </html>
