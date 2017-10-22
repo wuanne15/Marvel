@@ -2,6 +2,10 @@
   include("common.php");
   printTop();
 ?>
+      <script src="index.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
       <h1>Welcome to Stock Marvel</h1>
       <p>This is some text.</p>
       <div class="row">
@@ -15,7 +19,7 @@
             <li><a href="#">5</a></li>
             <li><a href="#">&raquo;</a></li>
           </ul>
-          <table class="table table-striped table-hover ">
+          <table id="ranking" class="table table-striped table-hover ">
             <thead>
               <tr>
                 <th>#</th>
@@ -25,23 +29,22 @@
               </tr>
             </thead>
             <tbody>
-            <?
-            $db = connect();
-            $rows = $db->query("
-								SELECT 
-								FROM
-								WHERE
-								LIMIT 6");
-            for ($i = 1; $i <= 6; $i++) { 
-            	$row= $rows->fetch(); ?>
+            <!--
+            #$db = connect();
+            #$rows = $db->query("
+								#SELECT
+								#FROM
+								#WHERE
+								#LIMIT 6");
+            #for ($i = 1; $i <= 6; $i++) {
+            	#$row= $rows->fetch(); ?>
             	<tr>
-                	<td><?=$i?></td>
-                	<td><?=$row[""]?></td>
+                	<td><?=#$i?></td>
+                	<td><?=#$row[""]?></td>
                 	<td class="text-right">3000</td>
                 	<td class="text-right">+0</td>
               </tr>
-            <?}
-            /*
+            }-->
               <tr>
                 <td>1</td>
                 <td>Iron Man</td>
@@ -83,7 +86,7 @@
                 <td>Hulk</td>
                 <td class="text-right">Column content</td>
                 <td class="text-right">Column content</td>
-              </tr> */?>
+              </tr>
             </tbody>
           </table>
         </div>
