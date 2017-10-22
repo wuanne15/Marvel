@@ -35,18 +35,19 @@
               </tr>
             </thead>
             <tbody>
-              <?php
+              <?
               $i = 1;
               while ($row = mysqli_fetch_array($res))
               {
                 ?>
                 <tr>
-                  <td><?= $i ?></td>
+                  <td><?=$i?></td>
                   <td><?=$row['character_name']?></td>
                   <td class="text-right"><?=$row['count']?></td>
                   <td class="text-right">+0</td>
                 </tr>
-              <?php
+              <?
+              $i = i +1;
               }
               ?>
               <!--
