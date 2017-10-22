@@ -49,7 +49,7 @@
     <?php     ?>
     </p>
     <p>Characters owned:
-    <?= count($user_todolist) - 1 ?>
+    <?= count($user_todolist) ?>
     </p>
     <p>Total Cards:
     <?php

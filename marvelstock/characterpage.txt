@@ -1,6 +1,20 @@
 <?php
   include("common.php");
   printTop();
+  $conn = connect();
+  $sql = "SELECT * 
+		FROM characters
+  		ORDER BY count DESC
+		LIMIT 15";
+ $res = mysqli_query($conn, $sql);
+ /*
+  while ($row = mysqli_fetch_array($res)) 
+ {
+ 	echo "{name: " . $row['character_name'] . ", ";
+ 	echo "count: " . $row['count'] . ", ";
+ 	echo "image_path: " . $row["image_path"] . "}, ";
+ }*/ 
+
 ?>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="characterpage.js"></script>
@@ -21,35 +35,56 @@
                   </div>
                   <div class="col-lg-6">
                     <?php if (loggedIn()) {
-                      if (hasCard){
+                      if (true){
                         ?>
-                        <p class="text-right">Owned</p>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#purchase">Purchase</button>
+                        <div class="modal fade" id="purchase" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title">Hero Name</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Purchase</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="close" data-dismiss="modal">Close</button>
+                                <form> 
+                                  <input type="number" class="form-control" id:quantity placeholder="0">
+                                </form>
+                                <li><a href="characterpage.php" class="btn btn-default">Purchase</a></li>
+                                <li><a href="characterpage.php" class="btn btn-default">Sell</a></li>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <?php
                       } else {
                         ?>
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#purchase">Purchase</button>
+                        <div class="modal fade" id="purchase" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title">Hero Name</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Purchase</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="close" data-dismiss="modal">Close</button>
+                                <form> 
+                                  <input type="number" class="form-control" id:quantity placeholder="0">
+                                </form>
+                                <li><a href="characterpage.php" class="btn btn-default">Purchase</a></li>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <?php
                       }
                     }
                     ?>
-                    
-                    <div class="modal fade" id="Purchase" role="dialog">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">Purchase</button>
-                            <h4 class="modal-title">Hero Name</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Purchsae </p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="text-right">Owned/Unowned</p>
                   </div>
                 </div>
               </div>
@@ -59,7 +94,7 @@
                 <div class="panel-heading">
                   <form class="navbar-form navbar-center" role="search">
                     <input type="text" class="form-control" placeholder="Character Name">
-                    <button id="char-graph" type="submit" class="btn btn-default">Submit</button>
+                    <button <a href="characterpage.php"><!--[SEARCHNAME]--></a> id="char-graph" type="submit" class="btn btn-default">Search</button>
                   </form>
                 </div>
               </div>

@@ -58,7 +58,6 @@
               </div>
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="characterpage.php">All Stocks<span class="sr-only">(current)</span></a></li>
                     <li><a href="characterpage.php">Character List</a></li>
                     <li><a href="about.php">About</a></li>
                   </ul>
@@ -115,7 +114,7 @@
   	$dbpass = "password";
   	$db = "Marvel";
   	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n" . $conn -> error);
-  	
+
   	return $conn;
   }
 ?>
