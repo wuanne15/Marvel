@@ -1,22 +1,7 @@
 <?php
   include("common.php");
-  printTop();
-
-  $conn = connect();
-  $sql = "SELECT *
-		FROM characters
-  		ORDER BY count DESC
-		LIMIT 15";
- $res = mysqli_query($conn, $sql);
- /*
-  while ($row = mysqli_fetch_array($res))
- {
- 	echo "{name: " . $row['character_name'] . ", ";
- 	echo "count: " . $row['count'] . ", ";
- 	echo "image_path: " . $row["image_path"] . "}, ";
- }*/
-
-?>
+  printTop(); ?>
+ 
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
       <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
@@ -36,6 +21,14 @@
             </thead>
             <tbody>
               <?
+
+              	$mysqli = mysqli_connect('localhost','hello', 'password', 'Marvel');
+              	if (mysqli_connect_errno())
+              	{
+              		die();
+              	}
+              	$res = mysqli_query($mysqli, "select * from characters");
+              	
               $i = 1;
               while ($row = mysqli_fetch_array($res))
               {
@@ -47,7 +40,7 @@
                   <td class="text-right">+0</td>
                 </tr>
               <?
-              $i = i +1;
+              $i = $i +1;
               }
               ?>
               <!--
