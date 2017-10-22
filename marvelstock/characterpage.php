@@ -34,6 +34,7 @@
                   </form>
                 </div>
               </div>
+              <div id="chart" style=height: 500px></div>
             </div>
             <div id="chart">
               Insert Stock Chart Here
