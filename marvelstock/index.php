@@ -2,10 +2,10 @@
   include("common.php");
   printTop();
 ?>
-      <!--<script type="text/javascript" src="index.js"></script>-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
       <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+      <script type="text/javascript" src="index.js"></script>
       <h1>Welcome to Stock Marvel</h1>
       <p>This is some text.</p>
       <div class="row">
