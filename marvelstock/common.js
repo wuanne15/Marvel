@@ -8,6 +8,10 @@
 			}
 	}
 
+	window.onload = function() {
+    document.getElementById('char-graph').onclick = drawBasic;
+  };
+
 	google.charts.load('current', {packages: ['corechart', 'line']});
 	google.charts.setOnLoadCallback(drawBasic);
 
