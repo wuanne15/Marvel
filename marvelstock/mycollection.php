@@ -51,7 +51,7 @@
   </div>
 </div>
 
-<table id="profile" class="table table-striped table-hover ">
+<table id="ranking" class="table table-striped table-hover ">
   <thead>
     <tr>
       <th>#</th>
