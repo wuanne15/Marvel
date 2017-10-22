@@ -7,4 +7,4 @@ handlers:
   upload: www/webpage.html
   
 - url: /www/.*(gif|png|jpg)
-  static_dir: www
+  static_files: www/stockmarvel-logo.png
