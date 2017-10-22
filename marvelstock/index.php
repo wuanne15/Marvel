@@ -7,7 +7,14 @@
 		FROM characters
   		ORDER BY count DESC
 		LIMIT 15";
-  
+ $res = mysqli_query($conn, $sql);
+ /*
+  while ($row = mysqli_fetch_array($res)) 
+ {
+ 	echo "{name: " . $row['character_name'] . ", ";
+ 	echo "count: " . $row['count'] . ", ";
+ 	echo "image_path: " . $row["image_path"] . "}, ";
+ }*/ 
   
 ?>
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
