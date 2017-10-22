@@ -55,14 +55,14 @@
   <thead>
     <tr>
       <th>#</th>
-      <th>Column heading</th>
-      <th>Column heading</th>
-      <th>Column heading</th>
+      <th>Character</th>
+      <th>Quantity</th>
+      <th>Value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Character</td>
+      <td>aef</td>
       <td>Column content</td>
       <td>Column content</td>
       <td>Column content</td>
@@ -70,7 +70,7 @@
   </tbody>
   <tbody>
     <tr>
-      <td>Quantity</td>
+      <td>ef</td>
       <td>Column content</td>
       <td>Column content</td>
       <td>Column content</td>
@@ -78,7 +78,7 @@
   </tbody>
   <tbody>
     <tr>
-      <td>Value</td>
+      <td>ef</td>
       <td>Column content</td>
       <td>Column content</td>
       <td>Column content</td>
