@@ -3,6 +3,8 @@
 	
 	window.onload = function() {
 		getChart();
+		getName();
+		getValue();
 	}
 	
 	function getChart(){
