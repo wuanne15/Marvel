@@ -2,7 +2,7 @@
   include("common.php");
   printTop();
 ?>
-        <script src="common.js"></script>
+        <script src="characterpage.js"></script>
         <div class="container-fluid">
           <h2>Character Information</h2>
           <div class="row">
