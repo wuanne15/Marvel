@@ -23,9 +23,8 @@
                     <?php if (loggedIn()) {
                       if (true){
                         ?>
-                        <p class="text-right">Owned</p>
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#purchase">Purchase</button>
-                        <div class="modal fade" id="Purchase" role="dialog">
+                        <div class="modal fade" id="purchase" role="dialog">
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
@@ -45,7 +44,6 @@
                       }
                     }
                     ?>
-                    <p class="text-right">Owned/Unowned</p>
                   </div>
                 </div>
               </div>
