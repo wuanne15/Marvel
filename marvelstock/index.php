@@ -32,8 +32,8 @@
 								FROM
 								WHERE
 								LIMIT 6");
-            for ($i = 1; $i <= 6; $i++) { ?>
-            	$row= $rows->fetch();
+            for ($i = 1; $i <= 6; $i++) { 
+            	$row= $rows->fetch(); ?>
             	<tr>
                 	<td><?=$i?></td>
                 	<td><?=$row[""]?></td>

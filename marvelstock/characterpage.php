@@ -2,6 +2,7 @@
   include("common.php");
   printTop();
 ?>
+
         <div class="container-fluid">
           <h2>Character Information</h2>
           <div class="row">
@@ -31,7 +32,7 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                   </form>
                 </div>
-                <div class="panel-body">
+                <div id="chart" class="panel-body">
                   Insert Stock Chart Here
                 </div>
               </div>
@@ -44,6 +45,7 @@
             </div>
           </div>
         </div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <?php
       printBot();
 ?>
