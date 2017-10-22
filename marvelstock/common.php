@@ -1,13 +1,12 @@
 <?php
-/*
   session_start();
 
   # This will set the user's name and their corresponding todolist file.
   $name = "";
-  $filename = "";
+  #$filename = "";
   if (isset($_SESSION["name"])) {
     $name = $_SESSION["name"];
-    $filename = "todo_" . $name . ".txt";
+    #$filename = "todo_" . $name . ".txt";
   }
 
   # This function will check if the user is currently logged in.
@@ -19,7 +18,7 @@
   function redirect($destination) {
     header("Location: " . $destination);
     die();
-  }*/
+  }
 
   # This function will print the top portion of the Remember the Cow site.
   function printTop() {
@@ -75,9 +74,28 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                   </form>
                   <ul class="nav navbar-nav navbar-right">
-                    <!--<li><a href="#">Log in or Sign up</a></li>-->
+                    <?php
+                    if (loggedIn()) {
+                        ?>
+                        <div class="btn-group">
+                          <a href="#" class="btn btn-default"><? $name ?></a>
+                          <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <?php
+                    } else {
+                    ?>
                     <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                     <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <?php
+                    }
+                    ?>
                   </ul>
               </div>
             </div>
