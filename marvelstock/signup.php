@@ -3,6 +3,7 @@
   printTop();
   ?>
   <div class="row">
+    <div class="col-lg-3"></div>
     <div class ="col-lg-6">
       <form class="form-horizontal">
       <fieldset>
@@ -37,6 +38,7 @@
       </fieldset>
       </form>
     </div>
+    <div class="col-lg-3"></div>
   </div>
   <?php
   printBot();
