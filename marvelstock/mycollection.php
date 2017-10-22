@@ -43,11 +43,6 @@
         for ($i=0; $i < count($user_todolist); $i++) {
           ?>
           <li>
-            <form action="submit.php" method="post">
-              <input type="hidden" name="action" value="delete" />
-              <input type="hidden" name="index" value="<?= $i ?>" />
-              <input type="submit" value="Delete" />
-            </form>
             <?= htmlspecialchars($user_todolist[$i]) ?>
           </li>
           <?php
