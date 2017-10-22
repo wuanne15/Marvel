@@ -2,7 +2,8 @@
   include("common.php");
   printTop();
 ?>
-
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="characterpage.js"></script>
         <div class="container-fluid">
           <h2>Character Information</h2>
           <div class="row">
@@ -29,7 +30,7 @@
                 <div class="panel-heading">
                   <form class="navbar-form navbar-center" role="search">
                     <input type="text" class="form-control" placeholder="Character Name">
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button id="char-graph" type="submit" class="btn btn-default">Submit</button>
                   </form>
                 </div>
                 <div id="chart" class="panel-body">
