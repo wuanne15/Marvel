@@ -8,6 +8,27 @@
 	}
 	
 	function getChart(){
-		common.makereq();
+		common.makereq("", loadchart);
+	}
+	
+	function loadchart() {
+		var res = this.responseXML;
+	}
+	
+	function GetName() {
+		common.makereq("", loadName);
+	}
+	
+	function loadName() {
+		var res = this.responseXML;
+	}
+	
+	function getValue() {
+		 common.makereq("" , loadValue);
+	}
+	
+	function loadValue() {
+		var res = this.responseXML;
+		document.getElementbyID
 	}
 })
