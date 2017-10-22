@@ -7,7 +7,7 @@
       <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
       <script type="text/javascript" src="index.js"></script>
       <h1>Welcome to Stock Marvel</h1>
-      <p>This is some text.</p>
+      <p>Current Rankings</p>
       <div class="row">
         <div class="col-sm-6">
           <table id="ranking" class="table table-striped table-hover ">
