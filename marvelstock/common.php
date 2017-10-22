@@ -27,6 +27,7 @@
   	if (isset($_SESSION["name"])) {
   		$name = $_SESSION["name"];
   		#$filename = "todo_" . $name . ".txt";
+  	}
   		
     ?>
     <!DOCTYPE html>
@@ -84,7 +85,7 @@
                     if (isset($_SESSION["name"])) {
                         ?>
                         <div class="btn-group">
-                          <a id= "WTF" href="#" class="btn btn-default"><?=$_SESSION["name"]. "NO" ?></a>
+                          <a id= "WTF" href="#" class="btn btn-default"><?=$name?></a>
                           <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
