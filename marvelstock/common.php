@@ -82,7 +82,7 @@
                   </form>
                   <ul class="nav navbar-nav navbar-right">
                     <?php
-                    if (isset($_SESSION["name"])) {
+                    if (loggedIn()) {
                         ?>
                         <div class="btn-group">
                           <a id= "WTF" href="#" class="btn btn-default"><?=$name?></a>
