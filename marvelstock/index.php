@@ -1,21 +1,21 @@
 <?php
   include("common.php");
   printTop();
-  
+
   $conn = connect();
-  $sql = "SELECT * 
+  $sql = "SELECT *
 		FROM characters
   		ORDER BY count DESC
 		LIMIT 15";
  $res = mysqli_query($conn, $sql);
  /*
-  while ($row = mysqli_fetch_array($res)) 
+  while ($row = mysqli_fetch_array($res))
  {
  	echo "{name: " . $row['character_name'] . ", ";
  	echo "count: " . $row['count'] . ", ";
  	echo "image_path: " . $row["image_path"] . "}, ";
- }*/ 
-  
+ }*/
+
 ?>
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
@@ -35,6 +35,21 @@
               </tr>
             </thead>
             <tbody>
+              <?php
+              $i = 1;
+              while ($row = mysqli_fetch_array($res))
+              {
+                ?>
+                <tr>
+                  <td><?= $i ?></td>
+                  <td><?=$row['character_name']?></td>
+                  <td class="text-right"><?=$row['count']?></td>
+                  <td class="text-right">+0</td>
+                </tr>
+              <?php
+              }
+              ?>
+              <!--
               <tr>
                 <td>1</td>
                 <td>Iron Man</td>
@@ -76,7 +91,7 @@
                 <td>Hulk</td>
                 <td class="text-right">Column content</td>
                 <td class="text-right">Column content</td>
-              </tr>
+              </tr>-->
             </tbody>
           </table>
         </div>

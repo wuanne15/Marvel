@@ -32,7 +32,7 @@
                                 <h4 class="modal-title">Hero Name</h4>
                               </div>
                               <div class="modal-body">
-                                <p>Purchase</p>
+                                <p>Purchase/Sell</p>
                               </div>
                               <div class="modal-footer">
                                 <a href="characterpage.php" class="btn btn-default">Purchase</a>
