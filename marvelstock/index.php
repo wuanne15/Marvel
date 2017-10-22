@@ -25,6 +25,23 @@
               </tr>
             </thead>
             <tbody>
+            <?
+            $db = connect();
+            $rows = $db->query("
+								SELECT 
+								FROM
+								WHERE
+								LIMIT 6");
+            for ($i = 1; $i <= 6; $i++) { ?>
+            	$row= $rows->fetch();
+            	<tr>
+                	<td><?=$i?></td>
+                	<td><?=$row[""]?></td>
+                	<td class="text-right">3000</td>
+                	<td class="text-right">+0</td>
+              </tr>
+            <?}
+            /*
               <tr>
                 <td>1</td>
                 <td>Iron Man</td>
@@ -66,7 +83,7 @@
                 <td>Hulk</td>
                 <td class="text-right">Column content</td>
                 <td class="text-right">Column content</td>
-              </tr>
+              </tr> */?>
             </tbody>
           </table>
         </div>
